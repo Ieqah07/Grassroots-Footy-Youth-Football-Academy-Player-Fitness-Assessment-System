@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Player Fitness Benchmarks | Grassroots Footy</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- External JavaScript -->
+    <script src="js/fitness.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+
+        <h1>Grassroots Footy</h1>
+        <p>SK Teruntum Football Portal</p>
+
+        <!-- Main Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="fitness.html" aria-current="page">Fitness</a></li>
+                <li><a href="mssd-export.html">MSSD Export</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Fitness Banner -->
+        <section class="hero-banner" aria-label="Player fitness banner">
+            <h2>Player Fitness Benchmarks</h2>
+            <p>Track player fitness performance and monitor physical progress.</p>
+        </section>
+
+
+        <!-- Page Introduction -->
+        <section class="page-heading">
+
+            <h2>Player Fitness Benchmarks</h2>
+
+            <p>
+                Record and monitor players' 30-metre sprint times,
+                stamina laps and agility scores.
+            </p>
+
+        </section>
+
+
+        <!-- Fitness Summary -->
+        <section class="fitness-summary" aria-label="Fitness summary">
+
+            <h2>Fitness Overview</h2>
+
+            <article class="summary-card">
+                <h3>Recorded Entries</h3>
+                <p>30</p>
+                <p>Fitness records</p>
+            </article>
+
+            <article class="summary-card">
+                <h3>Average 30m Sprint</h3>
+                <p>5.02 seconds</p>
+                <p>Team average</p>
+            </article>
+
+            <article class="summary-card">
+                <h3>Average Stamina Laps</h3>
+                <p>5.4 laps</p>
+                <p>Team average</p>
+            </article>
+
+            <article class="summary-card">
+                <h3>Target MVPA Met</h3>
+                <p>85%</p>
+                <p>Activity target</p>
+            </article>
+
+        </section>
+
+
+        <!-- Export Fitness Report -->
+        <section class="report-section">
+
+            <h2>Fitness Reports</h2>
+
+            <p>
+                Generate a report containing the recorded
+                player fitness information.
+            </p>
+
+            <button type="button" id="exportFitnessReport">
+                Export Fitness Report
+            </button>
+
+        </section>
+
+
+        <!-- Search and Filter -->
+        <section class="filter-section">
+
+            <h2>Search and Filter Players</h2>
+
+            <form id="fitnessFilterForm">
+
+                <div class="form-group">
+
+                    <label for="searchPlayer">
+                        Search Player Name or MyKid
+                    </label>
+
+                    <input
+                        type="search"
+                        id="searchPlayer"
+                        name="searchPlayer"
+                        placeholder="e.g. Sample Player 01"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="squadCategory">
+                        Squad Category
+                    </label>
+
+                    <select id="squadCategory" name="squadCategory">
+
+                        <option value="all">All Squads</option>
+                        <option value="U10">U10</option>
+                        <option value="U12">U12</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="fitnessStatus">
+                        Athlete Status
+                    </label>
+
+                    <select id="fitnessStatus" name="fitnessStatus">
+
+                        <option value="all">Any Status</option>
+                        <option value="high">High Fitness</option>
+                        <option value="good">Good</option>
+                        <option value="developing">Developing</option>
+
+                    </select>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Player Fitness Records -->
+        <section class="fitness-records">
+
+            <h2>Player Fitness Records</h2>
+
+            <p>
+                The following table displays the recorded
+                fitness results for each player.
+            </p>
+
+            <table>
+
+                <caption>Player Fitness Assessment Records</caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Player Details</th>
+                        <th scope="col">Squad</th>
+                        <th scope="col">30m Sprint (sec)</th>
+                        <th scope="col">Stamina (laps)</th>
+                        <th scope="col">Agility Rating</th>
+                        <th scope="col">Fitness Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Sample Player 01</td>
+                        <td>U12</td>
+                        <td>4.82</td>
+                        <td>6</td>
+                        <td>8 / 10</td>
+                        <td>High Fitness</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Sample Player 02</td>
+                        <td>U12</td>
+                        <td>5.10</td>
+                        <td>5</td>
+                        <td>7 / 10</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Sample Player 03</td>
+                        <td>U12</td>
+                        <td>5.45</td>
+                        <td>4</td>
+                        <td>6 / 10</td>
+                        <td>Developing</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Sample Player 04</td>
+                        <td>U12</td>
+                        <td>5.20</td>
+                        <td>5</td>
+                        <td>7 / 10</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Sample Player 05</td>
+                        <td>U12</td>
+                        <td>4.68</td>
+                        <td>7</td>
+                        <td>8 / 10</td>
+                        <td>High Fitness</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Sample Player 06</td>
+                        <td>U10</td>
+                        <td>5.60</td>
+                        <td>4</td>
+                        <td>6 / 10</td>
+                        <td>Developing</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Sample Player 07</td>
+                        <td>U10</td>
+                        <td>5.15</td>
+                        <td>5</td>
+                        <td>8 / 10</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Sample Player 08</td>
+                        <td>U10</td>
+                        <td>5.35</td>
+                        <td>5</td>
+                        <td>7 / 10</td>
+                        <td>Good</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 SK Teruntum Sports Co-curricular Unit.
+            Grassroots Footy.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

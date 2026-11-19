@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MSSD Tournament Team Export | Grassroots Footy</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- External JavaScript -->
+    <script src="js/mssd-export.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+
+        <h1>Grassroots Footy</h1>
+        <p>SK Teruntum Football Portal</p>
+
+        <!-- Main Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="mssd-export.html" aria-current="page">MSSD Export</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- MSSD Banner -->
+        <section class="hero-banner" aria-label="MSSD tournament banner">
+
+            <h2>Game On!</h2>
+
+            <p>SK Teruntum Football Portal</p>
+
+        </section>
+
+
+        <!-- Page Introduction -->
+        <section class="page-heading">
+
+            <h2>MSSD Tournament Team Export</h2>
+
+            <p>
+                Prepare the selected players' information
+                for the MSSD tournament registration.
+            </p>
+
+            <p>
+                Select the players for each squad category
+                before preparing the registration form.
+            </p>
+
+        </section>
+
+
+        <!-- U12 Squad -->
+        <section class="tournament-category">
+
+            <div class="category-heading">
+
+                <h2>Under 12 (U12) Squad</h2>
+
+                <p>
+                    MSSD tournament registration list for U12 players.
+                </p>
+
+            </div>
+
+
+            <!-- U12 Registration Form Preview -->
+            <article class="registration-preview">
+
+                <header class="registration-header">
+
+                    <h3>SEKOLAH KEBANGSAAN TERUNTUM</h3>
+
+                    <h4>
+                        MAJLIS SUKAN SEKOLAH DAERAH (MSSD)
+                    </h4>
+
+                    <p>FOOTBALL TOURNAMENT REGISTRATION FORM</p>
+
+                    <p>Category: Under 12 (U12)</p>
+
+                </header>
+
+
+                <!-- U12 Player Selection -->
+                <form id="u12SelectionForm">
+
+                    <table>
+
+                        <caption>U12 Tournament Player Registration</caption>
+
+                        <thead>
+
+                            <tr>
+                                <th scope="col">
+                                    <label for="selectAllU12">
+                                        Select All
+                                    </label>
+
+                                    <input
+                                        type="checkbox"
+                                        id="selectAllU12"
+                                        name="selectAllU12"
+                                    >
+                                </th>
+
+                                <th scope="col">No.</th>
+                                <th scope="col">Player Name</th>
+                                <th scope="col">MyKid Number</th>
+                                <th scope="col">Position</th>
+                                <th scope="col">Age Group</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u12Player"
+                                        value="u12-01"
+                                        aria-label="Select Sample Player 01"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>1</td>
+                                <td>Sample Player 01</td>
+                                <td>000000000001</td>
+                                <td>Defensive Midfielder</td>
+                                <td>U12</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u12Player"
+                                        value="u12-02"
+                                        aria-label="Select Sample Player 02"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>2</td>
+                                <td>Sample Player 02</td>
+                                <td>000000000002</td>
+                                <td>Right Wing</td>
+                                <td>U12</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u12Player"
+                                        value="u12-03"
+                                        aria-label="Select Sample Player 03"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>3</td>
+                                <td>Sample Player 03</td>
+                                <td>000000000003</td>
+                                <td>Forward</td>
+                                <td>U12</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u12Player"
+                                        value="u12-04"
+                                        aria-label="Select Sample Player 04"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>4</td>
+                                <td>Sample Player 04</td>
+                                <td>000000000004</td>
+                                <td>Right Back</td>
+                                <td>U12</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u12Player"
+                                        value="u12-05"
+                                        aria-label="Select Sample Player 05"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>5</td>
+                                <td>Sample Player 05</td>
+                                <td>000000000005</td>
+                                <td>Centre Back</td>
+                                <td>U12</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                    <p class="selection-count">
+                        Selected U12 Players: 5
+                    </p>
+
+
+                    <button type="button" id="exportU12">
+                        Export U12 Registration Form
+                    </button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <!-- U10 Squad -->
+        <section class="tournament-category">
+
+            <div class="category-heading">
+
+                <h2>Under 10 (U10) Squad</h2>
+
+                <p>
+                    MSSD tournament registration list for U10 players.
+                </p>
+
+            </div>
+
+
+            <!-- U10 Registration Form Preview -->
+            <article class="registration-preview">
+
+                <header class="registration-header">
+
+                    <h3>SEKOLAH KEBANGSAAN TERUNTUM</h3>
+
+                    <h4>
+                        MAJLIS SUKAN SEKOLAH DAERAH (MSSD)
+                    </h4>
+
+                    <p>FOOTBALL TOURNAMENT REGISTRATION FORM</p>
+
+                    <p>Category: Under 10 (U10)</p>
+
+                </header>
+
+
+                <!-- U10 Player Selection -->
+                <form id="u10SelectionForm">
+
+                    <table>
+
+                        <caption>U10 Tournament Player Registration</caption>
+
+                        <thead>
+
+                            <tr>
+                                <th scope="col">
+                                    <label for="selectAllU10">
+                                        Select All
+                                    </label>
+
+                                    <input
+                                        type="checkbox"
+                                        id="selectAllU10"
+                                        name="selectAllU10"
+                                    >
+                                </th>
+
+                                <th scope="col">No.</th>
+                                <th scope="col">Player Name</th>
+                                <th scope="col">MyKid Number</th>
+                                <th scope="col">Position</th>
+                                <th scope="col">Age Group</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u10Player"
+                                        value="u10-01"
+                                        aria-label="Select Sample Player 06"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>1</td>
+                                <td>Sample Player 06</td>
+                                <td>000000000006</td>
+                                <td>Goalkeeper</td>
+                                <td>U10</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u10Player"
+                                        value="u10-02"
+                                        aria-label="Select Sample Player 07"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>2</td>
+                                <td>Sample Player 07</td>
+                                <td>000000000007</td>
+                                <td>Left Wing</td>
+                                <td>U10</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u10Player"
+                                        value="u10-03"
+                                        aria-label="Select Sample Player 08"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>3</td>
+                                <td>Sample Player 08</td>
+                                <td>000000000008</td>
+                                <td>Forward</td>
+                                <td>U10</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u10Player"
+                                        value="u10-04"
+                                        aria-label="Select Sample Player 09"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>4</td>
+                                <td>Sample Player 09</td>
+                                <td>000000000009</td>
+                                <td>Defender</td>
+                                <td>U10</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        name="u10Player"
+                                        value="u10-05"
+                                        aria-label="Select Sample Player 10"
+                                        checked
+                                    >
+                                </td>
+
+                                <td>5</td>
+                                <td>Sample Player 10</td>
+                                <td>000000000010</td>
+                                <td>Midfielder</td>
+                                <td>U10</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                    <p class="selection-count">
+                        Selected U10 Players: 5
+                    </p>
+
+
+                    <button type="button" id="exportU10">
+                        Export U10 Registration Form
+                    </button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <!-- General Information -->
+        <section class="export-information">
+
+            <h2>Export Information</h2>
+
+            <p>
+                Review the selected players' information
+                before preparing the tournament registration form.
+            </p>
+
+            <p>
+                Please ensure that all player details,
+                especially MyKid numbers, are correct.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 SK Teruntum Sports Co-curricular Unit.
+            Grassroots Footy.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
